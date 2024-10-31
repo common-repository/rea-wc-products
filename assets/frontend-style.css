@@ -1,0 +1,97 @@
+.woocommerce-html-products-list {
+  text-align: left;
+}
+.woocommerce-html-products-list ul.products {
+  line-height: 1.7 !important;
+  list-style: none !important;
+  margin: 0 0 1em;
+  padding: 0;
+  clear: both;
+}
+.woocommerce-html-products-list ul.products ::before {
+  content: " ";
+  display: table;
+}
+.woocommerce-html-products-list ul.products li {
+  list-style: none outside;
+}
+.woocommerce-html-products-list ul.products li.product {
+  float: left;
+  margin: 0 3.8% 2.992em 0;
+  padding: 0;
+  position: relative;
+  width: 22.05%;
+}
+.woocommerce-html-products-list ul.products li.product a {
+  text-decoration: none;
+}
+.woocommerce-html-products-list ul.products li.product a img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  margin: 0 0 9px;
+}
+.woocommerce-html-products-list ul.products li.product .woocommerce-loop-product__title {
+  padding: 0.5em 0;
+  margin: 0;
+  font-size: 1em;
+}
+.woocommerce-html-products-list ul.products li.product .price {
+  display: block;
+  font-weight: 400;
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+.woocommerce-html-products-list ul.products li.first {
+  clear: both;
+}
+.woocommerce-html-products-list ul.products.columns-3 li.product {
+  width: 30.75%;
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .woocommerce-html-products-list ul.products li.product {
+    float: left;
+    margin: 0 3.8% 2.992em 0;
+    padding: 0;
+    position: relative;
+    width: 22.05%;
+  }
+  .woocommerce-html-products-list ul.products li.product:nth-child(n) {
+    margin: 0 7.5% 7.5% 0 !important;
+    width: 28.333% !important;
+    clear: none;
+    float: left !important;
+  }
+  .woocommerce-html-products-list ul.products li.product:nth-child(3n) {
+    margin-right: 0 !important;
+  }
+  .woocommerce-html-products-list ul.products li.product:nth-child(3n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .woocommerce-html-products-list ul.products li.product:nth-child(n) {
+    margin: 0 9.5% 9.5% 0 !important;
+    width: 45.25% !important;
+    clear: none;
+  }
+  .woocommerce-html-products-list ul.products li.product:nth-child(2n) {
+    margin-right: 0 !important;
+  }
+  .woocommerce-html-products-list ul.products li.product:nth-child(odd) {
+    clear: both;
+  }
+  .woocommerce-html-products-list ul.products li.product:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .woocommerce-html-products-list ul.products li.product:nth-child(n) {
+    margin: 0 0 11.5% !important;
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,108 @@
+.reainc-form .reaincTogglePassword {
+    margin-left: -35px;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    cursor: pointer;
+    color: #0071a1;
+    position: relative;
+    z-index: 1;
+}
+
+.reainc-form #reainc-wc-integration\[code\],
+.reainc-form #reainc-wc-integration\[api_key\] {
+    padding-right: 30px;
+}
+
+.reainc-form .relative,
+.reainc-form .button-holder {
+    position: relative;
+}
+
+.reainc-form .button-holder {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 781px) {
+    .reainc-form .reaincTogglePassword {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.reainc-form .button-holder.loading::after {
+    content: "";
+    animation: reainc-spin 500ms infinite linear;
+    border: 2px solid #000000;
+    border-radius: 32px;
+    border-right-color: transparent !important;
+    border-top-color: transparent !important;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -6px;
+}
+
+@keyframes reainc-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.reainc-from-header{
+    
+}
+
+.reainc-from-header-key{
+    width: 35%;
+    float:left;
+}
+
+.reainc-from-header-version{
+    width: 30%;
+    float:left;
+}
+
+.reainc-from-header-link{
+    width: 35%;
+    float:left;
+}
+
+.form_tr_invisible{
+    display:none;
+}
+
+/*KEY TABLE*/
+/*ACTIVE COLUMN*/
+#key_active{
+    width: 43px;
+}
+#domain{
+    width:20%;
+}
+#truncated_key{
+    
+}
+#enabled_date, #disabled_date{
+    width:16%;
+}
+.key_field_input{
+    width:80%;
+}
+.key_active_col{
+    text-align: center;
+}
+
+#add-new-key{
+    top: 7px;
+    right: 4px;
+}
